@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Express Cart | Product Page</title>
+    </head>
+    <body>
+        <h1>Product Page</h1>
+        <p>Total Products in Cart : <%= cart_size %></p>
+        <div id="product-container">
+            <h2><%=product.name%></h2>
+            <img src="<%=product.pic%>"/>
+            <p><strong>Description : </strong><%=product.description%></p>
+            <span><strong>Price : </strong><%=product.price%></span>
+        </div>
+    </body>
+</html>

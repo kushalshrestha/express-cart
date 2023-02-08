@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Express - Cart | Cart Page</title>
+    </head>
+    <body>
+        <h1>Shopping Cart List</h1>
+        <div id="cart">
+            <% 
+            let total = 0;
+            cart.forEach((product) => {%>
+                <div id="product-container">
+                <h2><%=product.name%></h2>
+                <img src="<%=product.pic%>"/>
+                <p><strong>Description : </strong><%=product.description%></p>
+                <span><strong>Price : </strong><%=product.price%></span>
+                </div>
+            <%
+        total+= product.price;
+        })%>
+        </div>
+        <h2>Total : <%= total %></h2>
+    </body>
+</html>
