@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 
-app.set('model', path.join(__dirname, 'model'));
+// app.set('model', path.join(__dirname, 'model'));
 
 
 app.use(logger('dev'));
